@@ -1,0 +1,10 @@
+---
+- name: Run Maven Project
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Build project
+      command: mvn clean install
+      args:
+        chdir: /mnt/c/Users/shree/IdeaProjects/6thexp
